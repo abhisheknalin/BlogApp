@@ -6,9 +6,9 @@ import (
     "net/http"
     "time"
 
-    "blogapp/common"
-    "blogapp/home"
-    "blogapp/user"
+    "github.com/abhisheknalin/blogapp/common"
+    "github.com/abhisheknalin/blogapp/home"
+    "github.com/abhisheknalin/blogapp/user"
 
     "github.com/golang/glog"
     "github.com/gorilla/mux"
