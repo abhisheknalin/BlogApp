@@ -4,7 +4,7 @@ import (
     "net/http"
     "html/template"
 
-    "git-go-websiteskeleton/app/common"
+    "github.com/abhisheknalin/blogapp/common"
 )
 
 func GetHomePage(rw http.ResponseWriter, req *http.Request) {

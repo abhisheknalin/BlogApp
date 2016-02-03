@@ -22,6 +22,9 @@ func main() {
     http.Handle("/", httpInterceptor(router))
 
     router.HandleFunc("/", home.GetHomePage).Methods("GET")
+    router.HandleFunc("/Aboutus", home.GetAboutusPage).Methods("GET")
+    router.HandleFunc("/login", home.GetLoginPage).Methods("GET")
+
     router.HandleFunc("/user{_:/?}", user.GetHomePage).Methods("GET")
 
     router.HandleFunc("/user/view/{id:[0-9]+}", user.GetViewPage).Methods("GET")
