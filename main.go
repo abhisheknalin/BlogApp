@@ -22,7 +22,7 @@ func main() {
     http.Handle("/", httpInterceptor(router))
 
     router.HandleFunc("/", home.GetHomePage).Methods("GET")
-    router.HandleFunc("/Aboutus", home.GetAboutusPage).Methods("GET")
+    router.HandleFunc("/aboutus", home.GetAboutusPage).Methods("GET")
     router.HandleFunc("/login", home.GetLoginPage).Methods("GET")
 
     router.HandleFunc("/user{_:/?}", user.GetHomePage).Methods("GET")

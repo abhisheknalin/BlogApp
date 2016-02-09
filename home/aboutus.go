@@ -16,7 +16,7 @@ func GetAboutusPage(rw http.ResponseWriter, req *http.Request) {
         Title: "Aboutus",
     }
 
-    common.Templates = template.Must(template.ParseFiles("templates/home/home.html", common.LayoutPath))
+    common.Templates = template.Must(template.ParseFiles("templates/home/aboutus.html", common.LayoutPath))
     err := common.Templates.ExecuteTemplate(rw, "base", p)
     common.CheckError(err, 2)
 }
